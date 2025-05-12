@@ -23,6 +23,12 @@
             _pc.Storage = gb; 
             return this; 
         }
+
+        public IPCBuilder SetPowerSupply(int watt)
+        {
+            _pc.PowerSupply = watt;
+            return this;
+        }
         public PC Build() 
         { 
             return _pc; 
